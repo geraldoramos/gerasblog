@@ -14,7 +14,6 @@ gem 'high_voltage'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
 gem 'will_paginate', '~> 3.0.5'
-gem 'ckeditor'
 gem 'will_paginate-bootstrap'
 
 group :development do
