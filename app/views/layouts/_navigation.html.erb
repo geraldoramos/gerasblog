@@ -1,4 +1,18 @@
-<%# navigation styled for Bootstrap 3.0 %>
+<div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <%= link_to 'Geras', root_path, class: 'navbar-brand' %>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <%= render 'layouts/navigation_links' %>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+<!-- <%# navigation styled for Bootstrap 3.0 %>
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -16,4 +30,4 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->

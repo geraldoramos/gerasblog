@@ -1,1 +1,20 @@
-<h3>Welcome</h3>
+
+
+<% @posts.each do |post| %>
+<div id="<%= cycle("grey", "white") %>">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<p><%= image_tag("user.png", size: '50x50')%> <ba>Geraldo Ramos</ba></p>
+					<p><bd>January 3, 2014</bd></p>
+					<h4><%= post.title %></h4>
+					<p><%= post.content %></p>
+				</div>
+
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /white -->
+	<% end %>
+	<div class="apple_pagination">
+	<%= will_paginate @posts , :page_links => false %>
+	</div>
